@@ -1,7 +1,7 @@
-src-git packages https://github.com/RedSnake64/packages.git;for-14.07
-src-git luci https://github.com/openwrt/luci.git;luci-0.12
-src-git routing https://github.com/openwrt-routing/packages.git;for-14.07
-src-git telephony https://github.com/openwrt/telephony.git;for-14.07
-src-git management https://github.com/openwrt-management/packages.git;for-14.07
+src-git packages https://github.com/RedSnake64/openwrt-packages.git;for-14.07
+src-git luci https://github.com/RedSnake64/openwrt-luci-packages.git;luci-0.12
+src-git routing https://github.com/RedSnake64/openwrt-routing-packages.git;for-14.07
+src-git telephony https://github.com/RedSnake64/openwrt-telephony-packages.git;for-14.07
+src-git management https://github.com/RedSnake64/openwrt-management-packages.git;for-14.07
 src-git oldpackages https://github.com/RedSnake64/openwrt-oldpackages.git
-src-git arduino https://github.com/RedSnake64/arduino-openwrt-packages.git
+src-git arduino https://github.com/RedSnake64/openwrt-arduino-packages.git
