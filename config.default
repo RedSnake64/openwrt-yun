@@ -1701,7 +1701,7 @@ CONFIG_PACKAGE_kmod-mii=m
 #
 # CONFIG_PACKAGE_kmod-8021q is not set
 # CONFIG_PACKAGE_kmod-appletalk is not set
-CONFIG_PACKAGE_kmod-atm=m
+CONFIG_PACKAGE_kmod-atm=y
 # CONFIG_PACKAGE_kmod-atmtcp is not set
 # CONFIG_PACKAGE_kmod-ax25 is not set
 # CONFIG_PACKAGE_kmod-batman-adv is not set
@@ -1814,7 +1814,7 @@ CONFIG_PACKAGE_kmod-slhc=y
 # USB Support
 #
 CONFIG_PACKAGE_kmod-usb-acm=m
-CONFIG_PACKAGE_kmod-usb-atm=m
+CONFIG_PACKAGE_kmod-usb-atm=y
 CONFIG_PACKAGE_kmod-usb-atm-cxacru=m
 CONFIG_PACKAGE_kmod-usb-atm-speedtouch=m
 CONFIG_PACKAGE_kmod-usb-atm-ueagle=m
@@ -2198,7 +2198,7 @@ CONFIG_PACKAGE_libassuan=y
 CONFIG_PACKAGE_libavahi=y
 # CONFIG_PACKAGE_libavahi-client is not set
 # CONFIG_PACKAGE_libavahi-dbus-support is not set
-# CONFIG_PACKAGE_libblkid is not set
+CONFIG_PACKAGE_libblkid=y
 CONFIG_PACKAGE_libblobmsg-json=y
 # CONFIG_PACKAGE_libboblight is not set
 # CONFIG_PACKAGE_libbz2 is not set
@@ -2226,7 +2226,8 @@ CONFIG_PACKAGE_libdaemon=y
 # CONFIG_PACKAGE_libdnet is not set
 # CONFIG_PACKAGE_libdvbpsi is not set
 # CONFIG_PACKAGE_libdvdread is not set
-# CONFIG_PACKAGE_libelf1 is not set
+CONFIG_PACKAGE_libelf1=y
+# CONFIG_PACKAGE_libdw is not set
 # CONFIG_PACKAGE_libev is not set
 # CONFIG_PACKAGE_libevent is not set
 # CONFIG_PACKAGE_libevent2 is not set
@@ -2249,8 +2250,8 @@ CONFIG_PACKAGE_libffi=y
 # CONFIG_PACKAGE_libfreefare is not set
 # CONFIG_PACKAGE_libfreenect is not set
 # CONFIG_PACKAGE_libfreetype is not set
-# CONFIG_PACKAGE_libftdi is not set
-# CONFIG_PACKAGE_libftdi1 is not set
+CONFIG_PACKAGE_libftdi=y
+CONFIG_PACKAGE_libftdi1=y
 # CONFIG_PACKAGE_libgcrypt is not set
 # CONFIG_PACKAGE_libgd is not set
 # CONFIG_PACKAGE_libgdbm is not set
@@ -2411,13 +2412,13 @@ CONFIG_PACKAGE_libuci-lua=y
 # CONFIG_PACKAGE_libunbound is not set
 # CONFIG_PACKAGE_libupnp is not set
 # CONFIG_PACKAGE_liburcu is not set
-# CONFIG_PACKAGE_libusb-1.0 is not set
-# CONFIG_PACKAGE_libusb-compat is not set
+CONFIG_PACKAGE_libusb-1.0=y
+CONFIG_PACKAGE_libusb-compat=y
 # CONFIG_PACKAGE_libusbmuxd is not set
 # CONFIG_PACKAGE_libustream-cyassl is not set
 # CONFIG_PACKAGE_libustream-openssl is not set
 CONFIG_PACKAGE_libustream-polarssl=y
-# CONFIG_PACKAGE_libuuid is not set
+CONFIG_PACKAGE_libuuid=y
 # CONFIG_PACKAGE_libv4l is not set
 # CONFIG_PACKAGE_libvncserver is not set
 # CONFIG_PACKAGE_libvorbis is not set
@@ -3837,7 +3838,7 @@ CONFIG_PACKAGE_wpad-mini=y
 #
 # disc
 #
-# CONFIG_PACKAGE_blkid is not set
+CONFIG_PACKAGE_blkid=y
 # CONFIG_PACKAGE_cfdisk is not set
 # CONFIG_PACKAGE_devio is not set
 # CONFIG_PACKAGE_fdisk is not set
@@ -3881,7 +3882,7 @@ CONFIG_PACKAGE_wpad-mini=y
 # CONFIG_PACKAGE_ap51-flash is not set
 # CONFIG_PACKAGE_apcupsd is not set
 # CONFIG_PACKAGE_at is not set
-# CONFIG_PACKAGE_avrdude is not set
+CONFIG_PACKAGE_avrdude=y
 # CONFIG_PACKAGE_avrusbboot is not set
 # CONFIG_PACKAGE_bandwidthd is not set
 # CONFIG_PACKAGE_bash is not set
