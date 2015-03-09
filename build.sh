@@ -15,12 +15,15 @@ rm -rf ./package/feeds/oldpackages/bluez-libs
 rm -rf ./package/feeds/oldpackages/bluez-utils
 rm -rf ./package/feeds/oldpackages/cwiid
 rm -rf ./package/feeds/packages/rng-tools
+rm -rf ./package/feeds/oldpackages/avrdude
+
+# LINK CUSTOM PACKAGES
 ln -s ../../../feeds/arduino/bluez ./package/feeds/arduino/bluez
 ln -s ../../../feeds/arduino/cwiid ./package/feeds/arduino/cwiid
 ln -s ../../../feeds/arduino/rng-tools ./package/feeds/arduino/rng-tools
+ln -s ../../../feeds/arduino/avrdude ./package/feeds/arduino/avrdude
 
 # CONFIG
-
 if [ "$BUILD_BASE_ONLY" = "Yes" ]; then
 	rm -f .config
 	cp config.default .config
