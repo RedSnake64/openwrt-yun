@@ -208,7 +208,10 @@ platform_check_image() {
 	dir-615-e4 | \
 	dir-825-c1 | \
 	dir-835-a1 | \
+	dlan-pro-500-wp | \
+	dlan-pro-1200-ac | \
 	dragino2 | \
+	epg5000 | \
 	esr1750 | \
 	esr900 | \
 	ew-dorin | \
@@ -300,6 +303,8 @@ platform_check_image() {
 		return 1
 		;;
 
+	antminer-s1 | \
+	antminer-s3 | \
 	archer-c5 | \
 	archer-c7 | \
 	el-m150 | \
