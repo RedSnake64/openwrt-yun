@@ -38,6 +38,9 @@ get_status_led() {
 	aw-nr580)
 		status_led="aw-nr580:green:ready"
 		;;
+	bsb)
+		status_led="bsb:red:sys"
+		;;
 	bullet-m | rocket-m | rocket-m-xw | nano-m | nanostation-m | nanostation-m-xw | loco-m-xw)
 		status_led="ubnt:green:link4"
 		;;
@@ -168,6 +171,9 @@ get_status_led() {
 	om5p | \
 	om5p-an)
 		status_led="om5p:blue:power"
+		;;
+	onion-omega)
+		status_led="onion:amber:system"
 		;;
 	pb44)
 		status_led="pb44:amber:jump1"
