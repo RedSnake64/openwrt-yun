@@ -331,6 +331,9 @@ ramips_board_detect() {
 	*"WHR-G300N")
 		name="whr-g300n"
 		;;
+	*"WizFi630A")
+		name="wizfi630a"
+		;;
 	*"Sitecom WL-341 v3")
 		name="wl341v3"
 		;;
@@ -400,6 +403,9 @@ ramips_board_detect() {
 	*"Zbtlink ZBT-WA05")
 		name="zbt-wa05"
 		;;
+	*"ZBT-WG2626")
+		name="zbt-wg2626"
+		;;
 	*"ZBT WR8305RT")
 		name="wr8305rt"
 		;;
@@ -417,6 +423,15 @@ ramips_board_detect() {
 		;;
 	*"Mediatek MT7628AN evaluation board")
 		name="mt7628"
+		;;
+	*"MediaTek LinkIt Smart 7688")
+		linkit="$(dd bs=1 skip=1024 count=12 if=/dev/mtd2 2> /dev/null)"
+		if [ "${linkit}" = "LINKITS7688D" ]; then
+			name="linkits7688d"
+			RAMIPS_MODEL="${machine} DUO"
+		else
+			name="linkits7688"
+		fi
 		;;
 	*)
 		name="generic"
