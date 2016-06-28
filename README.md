@@ -41,7 +41,7 @@ In order to successfully build it, you need to setup a Debian computer with at l
 Once your Debian System is ready, log in via SSH, then type:
 
 ```bash
-wget https://raw.githubusercontent.com/RedSnake64/openwrt-yun/master/FIRST_SETUP_debian_wheezy.sh
+wget https://raw.githubusercontent.com/RedSnake64/openwrt-yun/15.05/FIRST_SETUP_debian_wheezy.sh
 chmod +x FIRST_SETUP_debian_wheezy.sh
 sudo ./FIRST_SETUP_debian_wheezy.sh
 ```
