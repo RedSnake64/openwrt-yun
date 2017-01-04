@@ -104,6 +104,7 @@ CONFIG_TARGET_ar71xx_generic_YUN=y
 # CONFIG_TARGET_ar71xx_generic_DGL5500A1 is not set
 # CONFIG_TARGET_ar71xx_generic_dLAN_pro_500_wp is not set
 # CONFIG_TARGET_ar71xx_generic_dLAN_pro_1200_ac is not set
+# CONFIG_TARGET_ar71xx_generic_DW33D is not set
 # CONFIG_TARGET_ar71xx_generic_DRAGINO2 is not set
 # CONFIG_TARGET_ar71xx_generic_ELM150 is not set
 # CONFIG_TARGET_ar71xx_generic_ELMINI is not set
@@ -119,6 +120,7 @@ CONFIG_TARGET_ar71xx_generic_YUN=y
 # CONFIG_TARGET_ar71xx_generic_JA76PF2 is not set
 # CONFIG_TARGET_ar71xx_generic_JWAP003 is not set
 # CONFIG_TARGET_ar71xx_generic_WRT160NL is not set
+# CONFIG_TARGET_ar71xx_generic_E2100L is not set
 # CONFIG_TARGET_ar71xx_generic_WRT400N is not set
 # CONFIG_TARGET_ar71xx_generic_MR12 is not set
 # CONFIG_TARGET_ar71xx_generic_MR16 is not set
@@ -131,12 +133,15 @@ CONFIG_TARGET_ar71xx_generic_YUN=y
 # CONFIG_TARGET_ar71xx_generic_WNR612V2 is not set
 # CONFIG_TARGET_ar71xx_generic_WNR1000V2 is not set
 # CONFIG_TARGET_ar71xx_generic_WNR2200 is not set
+# CONFIG_TARGET_ar71xx_generic_WPN824N is not set
 # CONFIG_TARGET_ar71xx_generic_OMEGA is not set
 # CONFIG_TARGET_ar71xx_generic_OOLITE is not set
 # CONFIG_TARGET_ar71xx_generic_OM2P is not set
 # CONFIG_TARGET_ar71xx_generic_OM5P is not set
+# CONFIG_TARGET_ar71xx_generic_OM5PAC is not set
 # CONFIG_TARGET_ar71xx_generic_MR600 is not set
 # CONFIG_TARGET_ar71xx_generic_MR900 is not set
+# CONFIG_TARGET_ar71xx_generic_MR1750 is not set
 # CONFIG_TARGET_ar71xx_generic_OPENMESH is not set
 # CONFIG_TARGET_ar71xx_generic_UBDEV01 is not set
 # CONFIG_TARGET_ar71xx_generic_DLRTDEV01 is not set
@@ -223,6 +228,7 @@ CONFIG_DEFAULT_kmod-usb-core=y
 CONFIG_DEFAULT_kmod-usb2=y
 CONFIG_DEFAULT_libc=y
 CONFIG_DEFAULT_libgcc=y
+CONFIG_DEFAULT_logd=y
 CONFIG_DEFAULT_mtd=y
 CONFIG_DEFAULT_netifd=y
 CONFIG_DEFAULT_odhcp6c=y
@@ -416,7 +422,7 @@ CONFIG_TARGET_INIT_SUPPRESS_STDERR=y
 CONFIG_VERSIONOPT=y
 CONFIG_VERSION_DIST="OpenWrtYun"
 CONFIG_VERSION_NICK="ChaosCalmer"
-CONFIG_VERSION_NUMBER="1.4"
+CONFIG_VERSION_NUMBER="1.5"
 CONFIG_VERSION_REPO="http://rsdev.16mb.com/download/OpenWrt/ChaosCalmer_15.05/ArduinoYun/%V/packages"
 CONFIG_VERSION_MANUFACTURER="Arduino"
 CONFIG_VERSION_PRODUCT="Arduino Yun"
@@ -1375,6 +1381,7 @@ CONFIG_PACKAGE_libpthread=y
 CONFIG_PACKAGE_librt=y
 CONFIG_PACKAGE_libstdcpp=m
 CONFIG_PACKAGE_libthread-db=m
+CONFIG_PACKAGE_logd=y
 CONFIG_PACKAGE_mksh=m
 CONFIG_PACKAGE_mtd=y
 CONFIG_PACKAGE_netifd=y
@@ -3120,12 +3127,12 @@ CONFIG_PACKAGE_libhamlib=m
 # CONFIG_PACKAGE_hamlib-uniden is not set
 # CONFIG_PACKAGE_hamlib-wj is not set
 # CONFIG_PACKAGE_hamlib-yaesu is not set
-CONFIG_PACKAGE_hidapi=m
+CONFIG_PACKAGE_hidapi=y
 CONFIG_PACKAGE_ibrcommon=m
 CONFIG_PACKAGE_ibrdtn=m
 CONFIG_PACKAGE_libhttp-parser=m
 CONFIG_PACKAGE_libical=m
-CONFIG_PACKAGE_libiconv=m
+CONFIG_PACKAGE_libiconv=y
 CONFIG_PACKAGE_libiconv-full=m
 CONFIG_PACKAGE_libid3tag=m
 CONFIG_PACKAGE_libidn=m
@@ -3312,7 +3319,7 @@ CONFIG_PACKAGE_shflags=m
 CONFIG_PACKAGE_terminfo=y
 CONFIG_PACKAGE_tinycdb=m
 CONFIG_PACKAGE_uclibcxx=m
-CONFIG_PACKAGE_v8m-rb=m
+# CONFIG_PACKAGE_v8m-rb is not set
 CONFIG_PACKAGE_xmlrpc-c=m
 CONFIG_PACKAGE_xmlrpc-c-client=m
 CONFIG_PACKAGE_xmlrpc-c-common=m
@@ -3339,31 +3346,31 @@ CONFIG_LUCI_SRCDIET=y
 #
 # Translations
 #
-CONFIG_LUCI_LANG_ca=m
-CONFIG_LUCI_LANG_cs=m
-CONFIG_LUCI_LANG_de=m
+CONFIG_LUCI_LANG_hu=m
+CONFIG_LUCI_LANG_pt=m
+CONFIG_LUCI_LANG_ro=m
+CONFIG_LUCI_LANG_sk=m
 CONFIG_LUCI_LANG_el=m
+CONFIG_LUCI_LANG_uk=m
+CONFIG_LUCI_LANG_ja=m
+CONFIG_LUCI_LANG_vi=m
+CONFIG_LUCI_LANG_he=m
+CONFIG_LUCI_LANG_no=m
+CONFIG_LUCI_LANG_ms=m
+CONFIG_LUCI_LANG_pl=m
+CONFIG_LUCI_LANG_zh-cn=m
+CONFIG_LUCI_LANG_de=m
+CONFIG_LUCI_LANG_zh-tw=m
+CONFIG_LUCI_LANG_tr=m
+CONFIG_LUCI_LANG_sv=m
+CONFIG_LUCI_LANG_ru=m
+CONFIG_LUCI_LANG_pt-br=m
+CONFIG_LUCI_LANG_ca=m
 CONFIG_LUCI_LANG_en=m
 CONFIG_LUCI_LANG_es=m
+CONFIG_LUCI_LANG_cs=m
 CONFIG_LUCI_LANG_fr=m
-CONFIG_LUCI_LANG_he=m
-CONFIG_LUCI_LANG_hu=m
 CONFIG_LUCI_LANG_it=m
-CONFIG_LUCI_LANG_ja=m
-CONFIG_LUCI_LANG_ms=m
-CONFIG_LUCI_LANG_no=m
-CONFIG_LUCI_LANG_pl=m
-CONFIG_LUCI_LANG_pt=m
-CONFIG_LUCI_LANG_pt-br=m
-CONFIG_LUCI_LANG_ro=m
-CONFIG_LUCI_LANG_ru=m
-CONFIG_LUCI_LANG_sk=m
-CONFIG_LUCI_LANG_sv=m
-CONFIG_LUCI_LANG_tr=m
-CONFIG_LUCI_LANG_uk=m
-CONFIG_LUCI_LANG_vi=m
-CONFIG_LUCI_LANG_zh-cn=m
-CONFIG_LUCI_LANG_zh-tw=m
 CONFIG_PACKAGE_luci-mod-admin-full=y
 CONFIG_PACKAGE_luci-mod-failsafe=m
 CONFIG_PACKAGE_luci-mod-freifunk=m
@@ -3373,6 +3380,7 @@ CONFIG_PACKAGE_luci-mod-rpc=m
 #
 # 3. Applications
 #
+CONFIG_PACKAGE_luci-app-adblock=m
 CONFIG_PACKAGE_luci-app-ahcp=m
 CONFIG_PACKAGE_luci-app-arduino-webpanel=y
 CONFIG_PACKAGE_luci-app-asterisk=m
@@ -3380,6 +3388,7 @@ CONFIG_PACKAGE_luci-app-bcp38=m
 CONFIG_PACKAGE_luci-app-bird4=m
 CONFIG_PACKAGE_luci-app-bird6=m
 CONFIG_PACKAGE_luci-app-bmx6=m
+CONFIG_PACKAGE_luci-app-bmx7=m
 CONFIG_PACKAGE_luci-app-cjdns=m
 CONFIG_PACKAGE_luci-app-commands=m
 CONFIG_PACKAGE_luci-app-cshark=m
@@ -5046,6 +5055,15 @@ CONFIG_PACKAGE_oonf-init-scripts=m
 CONFIG_PACKAGE_oonf-olsrd2=m
 
 #
+# Optional Plugins
+#
+# CONFIG_OONF_NHDP_AUTOLL4 is not set
+# CONFIG_OONF_OLSRV2_LAN_IMPORT is not set
+# CONFIG_OONF_OLSRV2_ROUTE_MODIFIER is not set
+# CONFIG_OONF_GENERIC_DLEP_ROUTER is not set
+# CONFIG_OONF_GENERIC_REMOTECONTROL is not set
+
+#
 # Printing
 #
 CONFIG_PACKAGE_p910nd=m
@@ -5071,9 +5089,11 @@ CONFIG_PACKAGE_bmx6=m
 # CONFIG_PACKAGE_bmx6-table is not set
 # CONFIG_PACKAGE_bmx6-uci-config is not set
 CONFIG_PACKAGE_bmx7=m
+# CONFIG_PACKAGE_bmx7-iwinfo is not set
 CONFIG_PACKAGE_bmx7-json=m
 CONFIG_PACKAGE_bmx7-sms=m
 CONFIG_PACKAGE_bmx7-table=m
+# CONFIG_PACKAGE_bmx7-topology is not set
 CONFIG_PACKAGE_bmx7-tun=m
 CONFIG_PACKAGE_bmx7-uci-config=m
 CONFIG_PACKAGE_cjdns=m
@@ -5332,6 +5352,7 @@ CONFIG_PACKAGE_asterisk13-app-dahdiras=m
 # CONFIG_PACKAGE_asterisk13-app-mixmonitor is not set
 # CONFIG_PACKAGE_asterisk13-app-originate is not set
 # CONFIG_PACKAGE_asterisk13-app-playtones is not set
+# CONFIG_PACKAGE_asterisk13-app-queue is not set
 # CONFIG_PACKAGE_asterisk13-app-read is not set
 # CONFIG_PACKAGE_asterisk13-app-readexten is not set
 # CONFIG_PACKAGE_asterisk13-app-record is not set
@@ -5413,6 +5434,9 @@ CONFIG_PACKAGE_asterisk13-res-adsi=m
 CONFIG_PACKAGE_asterisk13-res-calendar=m
 # CONFIG_PACKAGE_asterisk13-res-clioriginate is not set
 # CONFIG_PACKAGE_asterisk13-res-fax is not set
+# CONFIG_PACKAGE_asterisk13-res-hep is not set
+# CONFIG_PACKAGE_asterisk13-res-hep-pjsip is not set
+# CONFIG_PACKAGE_asterisk13-res-hep-rtcp is not set
 # CONFIG_PACKAGE_asterisk13-res-http-websocket is not set
 # CONFIG_PACKAGE_asterisk13-res-monitor is not set
 # CONFIG_PACKAGE_asterisk13-res-musiconhold is not set
@@ -6008,6 +6032,33 @@ CONFIG_PACKAGE_nginx-naxsi=m
 CONFIG_PACKAGE_nginx-syslog=m
 CONFIG_PACKAGE_polipo=m
 CONFIG_PACKAGE_privoxy=m
+
+#
+# Shared libraries settings (Size changes taken on x86 with uClib)
+#
+# CONFIG_PRIVOXY_disable-pthread is not set
+# CONFIG_PRIVOXY_disable-dynamic-pcre is not set
+# CONFIG_PRIVOXY_disable-zlib is not set
+
+#
+# Config options. Overwrites/ignore configuration file settings
+#
+# CONFIG_PRIVOXY_disable-toggle is not set
+# CONFIG_PRIVOXY_disable-force is not set
+# CONFIG_PRIVOXY_disable-fast-redirects is not set
+# CONFIG_PRIVOXY_disable-stats is not set
+# CONFIG_PRIVOXY_enable-ie-images is not set
+# CONFIG_PRIVOXY_disable-image-blocking is not set
+# CONFIG_PRIVOXY_disable-acl-support is not set
+# CONFIG_PRIVOXY_disable-trust-files is not set
+# CONFIG_PRIVOXY_disable-editor is not set
+# CONFIG_PRIVOXY_enable-no-gifs is not set
+# CONFIG_PRIVOXY_enable-graceful-termination is not set
+# CONFIG_PRIVOXY_enable-extended-host-patterns is not set
+# CONFIG_PRIVOXY_enable-external-filters is not set
+# CONFIG_PRIVOXY_enable-accept-filter is not set
+# CONFIG_PRIVOXY_enable-strptime-sanity-checks is not set
+# CONFIG_PRIVOXY_enable-compression is not set
 CONFIG_PACKAGE_radicale-py2=m
 CONFIG_PACKAGE_shadowsocks-client=m
 CONFIG_PACKAGE_sockd=m
@@ -6037,6 +6088,7 @@ CONFIG_PACKAGE_464xlat=m
 CONFIG_PACKAGE_6in4=m
 CONFIG_PACKAGE_6rd=m
 CONFIG_PACKAGE_6to4=m
+CONFIG_PACKAGE_adblock=m
 CONFIG_PACKAGE_ahcpd=m
 CONFIG_PACKAGE_aiccu=m
 CONFIG_PACKAGE_alfred=m
@@ -6260,8 +6312,8 @@ CONFIG_PACKAGE_mpc=m
 CONFIG_PACKAGE_mpd-avahi-service=m
 CONFIG_PACKAGE_mpd-full=m
 CONFIG_PACKAGE_mpd-mini=m
-CONFIG_PACKAGE_pianod=m
-CONFIG_PACKAGE_pianod-client=m
+# CONFIG_PACKAGE_pianod is not set
+# CONFIG_PACKAGE_pianod-client is not set
 CONFIG_PACKAGE_portaudio=m
 CONFIG_PACKAGE_pulseaudio-daemon=m
 CONFIG_PACKAGE_pulseaudio-profiles=m
